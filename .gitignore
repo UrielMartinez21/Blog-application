@@ -2,3 +2,8 @@
 venv/
 
 .env
+# Ignorar todos los archivos en cualquier carpeta __pycache__
+__pycache__/
+
+# Asegúrate de ignorar archivos con extensión .pyc
+*.pyc
