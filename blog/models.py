@@ -6,6 +6,9 @@ from taggit.managers import TaggableManager
 
 
 class PublishedManager(models.Manager):
+    """
+    This is a custom manager that returns only the posts with the status of published.
+    """
     def get_queryset(self):
         return (
             super().get_queryset().filter(status=Post.Status.PUBLISHED)
